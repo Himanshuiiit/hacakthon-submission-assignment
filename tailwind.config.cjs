@@ -4,6 +4,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("tailwindcss"), require("autoprefixer")],
+  plugins: [],
   enabled: process.env.NODE_ENV === "production",
 };
