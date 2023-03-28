@@ -189,9 +189,10 @@ const SumissionForm = () => {
             }}
           />
           <div
-            className={`w-[1000px] h-[100px] bg-gray-200 rounded-xl mr-4 border-4 border-gray-400 border-dashed flex ${
+            className={`w-[1000px] h-[100px] bg-gray-200 rounded-xl mr-4 border-4 border-gray-400 border-dashed flex cursor-pointer ${
               image ? "" : "justify-center align-middle"
             }`}
+            onClick={() => inputRef.current?.click()}
           >
             {image ? (
               <div className="mx-4 flex justify-between w-full items-center">
@@ -204,8 +205,7 @@ const SumissionForm = () => {
                   <span className="ml-6">{imageName}</span>
                 </div>
                 <div
-                  className="flex mr-4 font-medium text-gray-600 cursor-pointer"
-                  onClick={() => inputRef.current?.click()}
+                  className="flex mr-4 font-medium text-gray-600"
                 >
                   Reupload <MdCloudUpload className="ml-3" size={22} />
                 </div>

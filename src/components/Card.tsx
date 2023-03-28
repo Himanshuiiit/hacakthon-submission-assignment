@@ -14,7 +14,7 @@ const Card = ({ item }: Props) => {
 
   return (
     <div
-      className="rounded-xl shadow-xl border-2 border-gray-100 flex-[0_0_25%] mb-12 p-5 mx-16 justify-around cursor-pointer relative"
+      className="rounded-xl shadow-xl border-2 border-gray-100 flex-[0_0_25%] mx-4 mb-12 p-5 justify-around cursor-pointer relative"
       onClick={() => {
         navigate(`/submission/${item.id}`);
       }}

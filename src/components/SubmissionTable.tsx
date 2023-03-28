@@ -33,13 +33,13 @@ const SubmissionTable = ({ isAsc, isFavSubmission, searchText }: Props) => {
   return (
     <div className="mx-20">
       {isFavSubmission ? (
-        <div className="flex flex-row flex-wrap container">
+        <div className="flex flex-row flex-wrap container justify-center">
           {allSubmissions.map((item) => {
             if (item.isFav) return <Card item={item} key={item.id} />;
           })}
         </div>
       ) : (
-        <div className="flex flex-row flex-wrap container">
+        <div className="flex flex-row flex-wrap container justify-center">
           {allSubmissions.map((item) => {
             return <Card item={item} key={item.id} />;
           })}
